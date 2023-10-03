@@ -1,38 +1,47 @@
-.App {
+#quote-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 70vw;
+  max-height: 30vh;
+  width: 30vw;
+  height: 25vh;
+  background-color: lightblue;
   text-align: center;
+  padding: 30px;
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width: 768px) {
+  #quote-box {
+    width: 70vw;
+    /* Adjust width for smaller screens */
+    height: 30vh;
+    /* Adjust height for smaller screens */
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#quote-n-author {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /* Center both text and author vertically and horizontally */
 }
 
-.App-link {
-  color: #61dafb;
+#text {
+  font-size: 1.75rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#author {
+  font-size: 1rem;
+  align-self: flex-end;
+  /* Position the author to the right within the container */
+  margin-top: 0.5rem;
+  /* Adjust top spacing as needed */
+}
+
+#buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
